@@ -1,3 +1,20 @@
-.header{
-    background: black;
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left, .patient {
+    width: 15%;
+}
+
+.logo {
+    padding: 60px 74px;
+}
+
+.title {
+    font-size: rem(50px);
+    color: $dark-red;
+    @include sourcesanspro(bold);
 }
