@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Unsubscribe Reasons List
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css')
+    link(rel='stylesheet', href='./css/main.css')
+  body
+    .wrapper
+        .content
+            header.header
+                .left
+                    .logo
+                .center
+                    .title
+                .patient
+                    span.patient__text Patient:
+                    span.patient__text.patient__text--green.patient__text--bold Mr Taras Mozhar
+            section.main
+                .background
+                    form.form
+                        .form__row
+                            .form__field
+                                label(for="organization").form__label Organization
+                                select#organization.form__input
+                                    option.form__option .No Gaps Dental
+                                    option.form__option Hart Dental
+                                    option.form__option Russia Test
+                                    .form__field
+                            .form__field
+                                label(for="surgery").form__label Surgery Name
+                                select#surgery.form__input
+                                    option.form__option Dental test
+                                    option.form__option Dental test 2
+                        .form__row
+                            .form__field.form__field--100 
+                                .form__label Unsubscribe Reason
+                                .form__sorting
+                                    a(href="#").form__sorting-item.form__sorting-item--active
+                                        svg.form__sorting-image
+                                            use(xlink:href='./images/sprite.svg#arrow-top')
+                                    a(href="#").form__sorting-item
+                                        svg.form__sorting-image
+                                            use(xlink:href='./images/sprite.svg#arrow-bottom')
+                                .form__list
+                                    a(href="#").form__item wish
+                                    a(href="#").form__item I
+                                    a(href="#").form__item no
+                                    a(href="#").form__item.form__item--active longer
+                        .form__row
+                            a(href="#").button Add
+                            a(href="#").button Delete
+                            a(href="#").button Edit
+                            a(
+                                href="#"
+                                disabled    
+                            ).button Cancel
+
+            footer.footer
+                .footer__left
+                    .footer__text Copyright © 2017 www.centaursoftware.com All rights reserved. Version: 18.311-release/0.8-e8a31ee/a383d00-obtest18_RC
+                .footer__right
+                    span.footer__link Usage
+                    span.footer__link Privacy Policy
+                    span.footer__text
+                    image(src="").footer__image
+
+
+
+    script(src='./libs/jquery-3.3.1.min.js')
+    script(src='./js/app.min.js')

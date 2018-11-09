@@ -1,0 +1,56 @@
+@mixin sourcesanspro($style: light) {
+	font-family: 'Sourcesanspro', Helvetica, sans-serif;
+	@if $style==extralight {
+        font-weight: 200; 
+    }
+    @if $style==light {
+        font-weight: 300; 
+    }
+    @else if $style==regular {
+        font-weight: 400; 
+    }
+    @else if $style==bold {
+        font-weight: bold;
+	}
+	@else if $style==semibold {
+        font-weight: 600;
+	}
+	@else if $style==black {
+        font-weight: 900;
+    }
+}
+
+
+@function rem($px) {
+	@return $px / 16px*1rem;
+}
+
+@mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop) {
+		@content
+	}
+}
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content
+	}
+}
+
+@mixin phones-small {
+	@media screen and (max-width: $phones-small) {
+		@content
+	}
+}

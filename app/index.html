@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe Reasons List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="left">
+            <div class="logo"></div>
+          </div>
+          <div class="center">
+            <div class="title"></div>
+          </div>
+          <div class="patient"><span class="patient__text">Patient:</span><span class="patient__text patient__text--green patient__text--bold">Mr Taras Mozhar</span></div>
+        </header>
+        <section class="main">
+          <div class="background">
+            <form class="form">
+              <div class="form__row">
+                <div class="form__field">
+                  <label class="form__label" for="organization">Organization</label>
+                  <select class="form__input" id="organization">
+                    <option class="form__option">.No Gaps Dental</option>
+                    <option class="form__option">Hart Dental</option>
+                    <option class="form__option">Russia Test</option>
+                    <div class="form__field"></div>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="surgery">Surgery Name</label>
+                  <select class="form__input" id="surgery">
+                    <option class="form__option">Dental test</option>
+                    <option class="form__option">Dental test 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__field form__field--100"> 
+                  <div class="form__label">Unsubscribe Reason</div>
+                  <div class="form__sorting"><a class="form__sorting-item form__sorting-item--active" href="#">
+                      <svg class="form__sorting-image">
+                        <use xlink:href="./images/sprite.svg#arrow-top"></use>
+                      </svg></a><a class="form__sorting-item" href="#">
+                      <svg class="form__sorting-image">
+                        <use xlink:href="./images/sprite.svg#arrow-bottom"></use>
+                      </svg></a></div>
+                  <div class="form__list"><a class="form__item" href="#">wish</a><a class="form__item" href="#">I</a><a class="form__item" href="#">no</a><a class="form__item form__item--active" href="#">longer</a></div>
+                </div>
+              </div>
+              <div class="form__row"><a class="button" href="#">Add</a><a class="button" href="#">Delete</a><a class="button" href="#">Edit</a><a class="button" href="#" disabled>Cancel</a></div>
+            </form>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__left">
+            <div class="footer__text">Copyright © 2017 www.centaursoftware.com All rights reserved. Version: 18.311-release/0.8-e8a31ee/a383d00-obtest18_RC</div>
+          </div>
+          <div class="footer__right"><span class="footer__link">Usage</span><span class="footer__link">Privacy Policy</span><span class="footer__text"></span>
+            <image class="footer__image" src=""></image>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./libs/jquery-3.3.1.min.js"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>
