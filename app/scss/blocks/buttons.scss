@@ -5,11 +5,14 @@
     padding: 12px 40px;
     display: flex;
     background-color: $light-gray;
-    margin-right: 11px;
+    margin-right: rem(11px);
     transition: background-color .2s;
     &:hover {
         background-color: $green;
         color:white;
+    }
+    @include phones {
+        margin-bottom: rem(11px);
     }
 }
 

@@ -7,11 +7,24 @@
     display: flex;
     flex-direction: column;
     padding: rem(31px) rem(24px);
+    @include tablets {
+        width: 88%;
+    }
+    @include laptop {
+        width: 88%;
+    }
+    @include phones {
+        width: 100%;
+        padding: rem(18px) rem(6px);
+    }
 }
 
 .form__row {
     display: flex;
     margin-bottom: 40px;
+    @include phones {
+        flex-wrap: wrap;
+    }
 }
 
 .form__field {
@@ -19,10 +32,17 @@
     flex-direction: column;
     width:50%;
     position: relative;
+    @include phones {
+        width: 45%;
+        margin-top: 5px;
+    }
 }
 
 .form__field:first-child {
     margin-right: rem(40px);
+    @include phones {
+        margin-right: rem(10px);
+    }
 }
 
 .form__input {
@@ -75,6 +95,7 @@
     width: 100%;
     box-sizing: content-box;
     display: none;
+    z-index: 10;
   }
 
   .open {

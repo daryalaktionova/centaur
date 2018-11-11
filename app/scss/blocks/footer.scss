@@ -4,12 +4,24 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #f7f6f5;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__left {
     color: $gray;
     font-size: rem(12px);
     padding: rem(14px);
+    @include laptop {
+        width: 50%;
+    }
+    @include tablets {
+        width: 40%;
+    }
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__right {
@@ -17,6 +29,11 @@
     color: $green;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    @include phones {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }
 
 .footer__text {
