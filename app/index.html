@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unsubscribe Reasons List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
@@ -16,52 +17,57 @@
           <div class="center">
             <div class="title">Unsubscribe Reasons List</div>
           </div>
-          <div class="patient"><span class="patient__text">Patient:</span><span class="patient__text patient__text--green patient__text--bold">Mr Taras Mozhar</span></div>
+          <div class="patient">
+            <div class="patient__text-wrapper"><span class="patient__text">Patient: </span><span class="patient__text patient__text--green patient__text--bold">Mr Taras Mozhar</span></div>
+            <div class="patient__hamburger-wrapper">
+              <div class="patient__hamburger"> </div>
+            </div>
+          </div>
         </header>
         <section class="main">
-          <div class="background">
-            <form class="form">
-              <div class="form__row">
-                <div class="form__field">
-                  <label class="form__label" for="organization">Organization</label>
-                  <select class="form__input" id="organization">
-                    <option class="form__option">.No Gaps Dental</option>
-                    <option class="form__option">Hart Dental</option>
-                    <option class="form__option">Russia Test</option>
-                    <div class="form__field"></div>
-                  </select>
-                </div>
-                <div class="form__field">
-                  <label class="form__label" for="surgery">Surgery Name</label>
-                  <select class="form__input" id="surgery">
-                    <option class="form__option">Dental test</option>
-                    <option class="form__option">Dental test 2</option>
-                  </select>
+          <form class="form">
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label" for="organization">Organization:</label>
+                <div class="form__select form__input form__input--select" id="organization">
+                  <div class="form__option-wrapper" id="organization-wrapper">
+                    <p class="form__option select-one">.No Gaps Dental</p>
+                    <p class="form__option select-one">Hart Dental</p>
+                    <p class="form__option select-one">Russia Test</p>
+                  </div>
+                  <div class="value" id="value"></div>
                 </div>
               </div>
-              <div class="form__row">
-                <div class="form__field form__field--100"> 
+              <div class="form__field">
+                <label class="form__label" for="surgery">Surgery Name:</label>
+                <div class="form__select form__input form__input--select" id="surgery">
+                  <div class="form__option-wrapper" id="surgery-wrapper">
+                    <p class="form__option select-two">Dental test</p>
+                    <p class="form__option select-two">Dental test2</p>
+                    <p class="form__option select-two">Dental test3</p>
+                  </div>
+                  <div class="value2" id="value2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field form__field--100"> 
+                <div class="form__wrapper-reason">
                   <div class="form__label">Unsubscribe Reason</div>
-                  <div class="form__sorting"><a class="form__sorting-item form__sorting-item--active" href="#">
-                      <svg class="form__sorting-image">
-                        <use xlink:href="./images/sprite.svg#arrow-top"></use>
-                      </svg></a><a class="form__sorting-item" href="#">
-                      <svg class="form__sorting-image">
-                        <use xlink:href="./images/sprite.svg#arrow-bottom"></use>
-                      </svg></a></div>
-                  <div class="form__list"><a class="form__item" href="#">wish</a><a class="form__item" href="#">I</a><a class="form__item" href="#">no</a><a class="form__item form__item--active" href="#">longer</a></div>
+                  <div class="form__sorting"><a class="form__sorting-item form__sorting-item--active" href="#"><i class="fas fa-long-arrow-alt-up"></i></a><a class="form__sorting-item" href="#"><i class="fas fa-long-arrow-alt-down"></i></a></div>
                 </div>
+                <div class="form__list"><a class="form__item" href="#">wish</a><a class="form__item" href="#">I</a><a class="form__item" href="#">no</a><a class="form__item form__item--active" href="#">longer</a></div>
               </div>
-              <div class="form__row"><a class="button" href="#">Add</a><a class="button" href="#">Delete</a><a class="button" href="#">Edit</a><a class="button" href="#" disabled>Cancel</a></div>
-            </form>
-          </div>
+            </div>
+            <div class="form__row"><a class="button" href="#">Add</a><a class="button" href="#">Delete</a><a class="button" href="#">Edit</a><a class="button" href="#" disabled>Cancel</a></div>
+          </form>
         </section>
         <footer class="footer">
           <div class="footer__left">
             <div class="footer__text">Copyright © 2017 www.centaursoftware.com All rights reserved. Version: 18.311-release/0.8-e8a31ee/a383d00-obtest18_RC</div>
           </div>
-          <div class="footer__right"><span class="footer__link">Usage</span><span class="footer__link">Privacy Policy</span><span class="footer__text"></span>
-            <image class="footer__image" src=""></image>
+          <div class="footer__right"><a class="footer__link">Usage</a><a class="footer__link">Privacy Policy</a><span class="footer__text">Powered by</span>
+            <image class="footer__image" src="./images/logo-footer.jpg"></image>
           </div>
         </footer>
       </div>

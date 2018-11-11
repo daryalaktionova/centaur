@@ -1,0 +1,33 @@
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f7f6f5;
+}
+
+.footer__left {
+    color: $gray;
+    font-size: rem(12px);
+    padding: rem(14px);
+}
+
+.footer__right {
+    font-size: rem(14px);
+    color: $green;
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: rem(12px);
+    color: $gray;
+    padding: 0 16px;
+}
+
+.footer__link {
+    padding: 0 16px;
+    border-right: 1px solid $gray;
+    text-decoration: none;
+    color: $green;
+}

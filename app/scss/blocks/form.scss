@@ -1,0 +1,159 @@
+.form {
+    background-color: rgba($color: #fff, $alpha: .8);
+    width: 68%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: rem(31px) rem(24px);
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    position: relative;
+}
+
+.form__field:first-child {
+    margin-right: rem(40px);
+}
+
+.form__input {
+    height: rem(37px);
+    border: $gray solid 1px;
+    padding: 0 rem(13px);
+    color: $dark-gray;
+    position: relative;
+}
+
+.form__label {
+    color: $dark-red;
+}
+
+
+.form__select {
+    border: 1px solid #b1b1b0;
+    width: 100%;
+    z-index: 1;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    height: 34px;
+    background: url(../../images/arrow.png), #ffffff;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+ } 
+
+  .form__option {
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 5px;
+    &:hover {
+        background-color: $green;
+        color: white;
+    }
+  }
+  .form__option--active {
+    background-color: $green;
+    color: white;
+  }
+
+  .form__option-wrapper {
+    border: 1px solid #b1b1b0;
+    border-top: 1px solid #fff;
+    background-color: #fff;
+    top: 100%;
+    left: -1px;
+    position: absolute;
+    width: 100%;
+    box-sizing: content-box;
+    display: none;
+  }
+
+  .open {
+      display: block;
+  }
+
+  .form__row .form__field--100 {
+      width: 100%;
+      margin-right: 0;
+  }
+
+
+  .form__wrapper-reason {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .form__sorting {
+      display: flex;
+
+  }
+  .form__sorting-item {
+      width: 46px;
+      height: 30px;
+      border-radius: 3px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: .2s;
+      &:hover { 
+          background-color: $green;
+      }
+  }
+  .form__sorting-item:first-child {
+      margin-right: 2px;
+  }
+
+  .form__sorting-item .fas {
+      color: $gray;
+  }
+
+  .form__sorting-item--active {
+      background-color: $green;
+  }
+
+  .form__sorting-item--active .fas {
+      color: white;
+  }
+
+  .form__sorting-item:hover>.fas {
+    color: white;
+}
+
+.form__list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form__item {
+    padding: 26px 16px;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.form__item:nth-child(even) {
+    background-color: $light-gray;
+}
+
+.form__item:hover {
+    background-color: $green;
+}
+
+.form__list .form__item--active {
+    background-color: $green;
+}

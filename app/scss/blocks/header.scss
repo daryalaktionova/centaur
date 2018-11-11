@@ -6,11 +6,11 @@
 }
 
 .left, .patient {
-    width: 15%;
+    width: 20%;
 }
 
 .logo {
-    padding: 60px 74px;
+    padding: 22px 74px;
 }
 
 .title {
@@ -18,3 +18,57 @@
     color: $dark-red;
     @include sourcesanspro(bold);
 }
+
+.patient__text {
+    color: $gray;
+    @include sourcesanspro(regular);
+    &--green {
+        color: $green;
+    }
+    &--bold {
+        @include sourcesanspro(bold);
+    }
+}
+
+.patient__hamburger {
+    height: rem(4px);
+	width: 100%;
+	background-color: $green;
+    width: 21px;
+    position: relative;
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: rem(4px);
+		width: 100%;
+		background-color: $green;
+        width: 21px;
+	}
+	&:before {
+		top: -6px;
+	}
+	&:after {
+		bottom: -6px;
+	}
+}
+
+.patient {
+    position: relative;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+
+.patient__hamburger-wrapper {
+    margin-left: 20px;
+    position: relative;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
